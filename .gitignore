@@ -1,0 +1,9 @@
+# osx noise
+.DS_Store
+profile
+
+# Webstorm noise
+.idea
+
+# npm noise
+node_modules
