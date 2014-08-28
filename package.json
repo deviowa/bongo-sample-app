@@ -23,10 +23,13 @@
     "coffeeify": "~0.7.0",
     "gulp-watch": "~0.6.9",
     "angular-ui-router": "~0.2.10",
-    "angular": "~1.2.21"
+    "angular": "~1.2.21",
+    "protractor": "~1.1.1"
   },
   "scripts": {
+    "postinstall": "webdriver-manager update",
     "dev": "gulp",
-    "test": "karma start karma-unit.js"
+    "unit": "karma start karma-unit.js",
+    "e2e": "webdriver-manager start"
   }
 }
