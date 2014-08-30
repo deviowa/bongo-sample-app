@@ -1,21 +1,5 @@
 var mainMenuModule = require('./mainMenu/module');
-var uiRouter = require('angular-ui-router');
+var navigationModule = require('./navigation/module');
 
-var app = angular.module('angularcourse', ['templates', uiRouter, mainMenuModule.name]);
+var app = angular.module('angularcourse', ['templates', navigationModule.name, mainMenuModule.name]);
 
-app.config(['$urlRouterProvider', function($urlRouterProvider) {
-    $urlRouterProvider.otherwise('/home');
-}]);
-
-app.config(['$stateProvider', function($stateProvider) {
-
-    $stateProvider
-        .state('home', {
-            url: '/home',
-            templateUrl: 'home.html'
-        })
-        .state('about', {
-            url: '/about',
-            templateUrl: 'about.html'
-        });
-}]);
