@@ -13,7 +13,7 @@ describe('thing', function () {
     }
 
     // this is the actual test
-    it('compiles and displays "Bus stop"', function () {
+    it('compiles bus-stop and displays correct template', function () {
         var busStopDirective = compile("<bus-stop></bus-stop>");
 
         expect(busStopDirective.html()).toContain("Title of Stop");
