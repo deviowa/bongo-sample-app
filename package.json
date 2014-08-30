@@ -30,6 +30,7 @@
     "postinstall": "webdriver-manager update",
     "dev": "gulp",
     "unit": "karma start karma-unit.js",
-    "e2e": "webdriver-manager start"
+    "start-webdriver": "webdriver-manager start",
+    "e2e": "protractor protractor-conf.js"
   }
 }

@@ -7,3 +7,5 @@ profile
 
 # npm noise
 node_modules
+npm-debug.log
+build
