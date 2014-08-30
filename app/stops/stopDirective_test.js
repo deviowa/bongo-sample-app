@@ -15,7 +15,7 @@ describe('thing', function () {
     // this is the actual test
     it('compiles and displays "Bus stop"', function () {
         var busStopDirective = createStopDirective();
-        
+
         expect(busStopDirective.html()).toContain("Title of Stop");
     });
 });
