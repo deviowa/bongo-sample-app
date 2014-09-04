@@ -1,6 +1,7 @@
-var uiRouter = require('angular-ui-router');
+var angularModule = angular.module('angularcourse-routes', [
+    require('angular-ui-router')
+]);
 
-var angularModule = angular.module('angularcourse-routes', [uiRouter])
 angularModule.config(['$urlRouterProvider', function($urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
 }]);
@@ -18,4 +19,4 @@ angularModule.config(['$stateProvider', function($stateProvider) {
         });
 }]);
 
-module.exports = angularModule;
+module.exports = angularModule.name;
