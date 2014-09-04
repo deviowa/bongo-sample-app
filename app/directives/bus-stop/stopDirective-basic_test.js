@@ -14,7 +14,7 @@ describe('thing', function () {
 
     // this is the actual test
     it('compiles bus-stop and displays correct template', function () {
-        var busStopDirective = compile("<bus-stop></bus-stop>");
+        var busStopDirective = compile("<bus-stop stop='{title: \"Example Bus Title!\"}'></bus-stop>");
 
         expect(busStopDirective.html()).toContain("Example Bus Title!");
     });
