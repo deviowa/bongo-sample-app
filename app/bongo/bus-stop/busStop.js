@@ -22,7 +22,7 @@ busStopModule.directive('busStop', function () {
         restrict: 'E',
 
         // this links to an html template that can either be downloaded or preloaded.
-        templateUrl: 'directives/bus-stop/busStop.html',
+        templateUrl: 'bongo/bus-stop/busStop.html',
         // Our build script automatically preloads all html templates (and also compiles jade files to html, so
         // directives/bus-stop/busStop.jade is the source for this directives/bus-stop/busStop.html file.
 

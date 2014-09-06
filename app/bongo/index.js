@@ -5,9 +5,9 @@
  * 3. use the directive selector in your markup
  */
 
-var directivesModule = angular.module('angularcourse-stops', [
+var bongoModule = angular.module('angularcourse-bongo', [
     require('./bus-stop/busStop')
 ]);
 
 
-module.exports = directivesModule.name;
+module.exports = bongoModule.name;
