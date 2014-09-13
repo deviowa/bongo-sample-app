@@ -6,8 +6,8 @@
  */
 
 var bongoModule = angular.module('angularcourse-bongo', [
-    require('./bus-stop/busStop')
+    require('./bus-stop/busStop'),
+    require('./apiService')
 ]);
-
 
 module.exports = bongoModule.name;

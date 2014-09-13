@@ -1,6 +1,9 @@
-button.btn.btn-default.btn-lg.star-button(type='button')
-  span.glyphicon.glyphicon-star-empty
-h3 {{stop.title}}
+div(ng-if="loading") Loading...
+div(ng-if="!loading")
+  button.btn.btn-default.btn-lg.star-button(type='button')
+    span.glyphicon.glyphicon-star-empty
 
-.well
-  p Estimated time until next bus arrives
+  h3 {{stop.stoptitle}}
+
+  .well
+    p Estimated time until next bus arrives... [not implemented]

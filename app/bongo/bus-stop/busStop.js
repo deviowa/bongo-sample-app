@@ -31,12 +31,23 @@ busStopModule.directive('busStop', function () {
 
         // by declaring a scope property, we basically specify the parameters that should go in and out of the directive
         scope: {
-            'stop': '='
+            'stopId': '='
         },
 
-        //this controller is only here as a placeholder for now. You can omit it in your own code.
-        controller: ['$scope', function($scope) {
-            // more on controllers later.
+        // this controller will automatically be instantiated for every instance of this directive. It's anonymous,
+        // it doesn't need a name since it is defined right here, but you could also refer to a named controller
+        // here if you wanted.
+        controller: ['$scope', 'bongoService', function($scope, bongoService) {
+
+            $scope.$watch('stopId', function(newStopId) {
+                $scope.loading = true;
+
+                bongoService.stopInfo(newStopId).then(function(stop) {
+                    $scope.loading = false;
+                    $scope.stop = stop;
+                });
+            });
+
         }]
     };
 });

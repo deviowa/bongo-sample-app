@@ -3,4 +3,3 @@ var app = angular.module('angularcourse', [
     require('./navigation'),
     require('./bongo')
 ]);
-

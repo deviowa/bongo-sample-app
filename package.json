@@ -24,7 +24,8 @@
     "gulp-watch": "~0.6.9",
     "angular-ui-router": "~0.2.10",
     "angular": "~1.2.21",
-    "protractor": "~1.1.1"
+    "protractor": "~1.1.1",
+    "angular-mocks": "~1.2.22"
   },
   "scripts": {
     "postinstall": "webdriver-manager update",

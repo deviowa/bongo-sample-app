@@ -7,4 +7,4 @@ describe 'angularjs homepage', ->
   it 'has a home page with the title of the app', ->
     browser.get 'http://localhost:9000'
 
-    expect($('#app-title').getText()).toEqual 'Amazing Bus Route Navigator!'
+    expect($('.navbar-brand').getText()).toEqual 'Amazing Bus Route Navigator'
