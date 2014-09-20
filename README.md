@@ -39,3 +39,11 @@ The tests will keep running as you make changes to your code. I reserve a whole 
 
 The tests will run in chrome by default, though webdriver-manager can be used to run them in whatever browser you like.
 They just run once per invocation.
+
+
+### Sample links
+
+From the angular docs site:
+
+Simple example: http://jsfiddle.net/8Lfqscor/
+Complex example: http://jsfiddle.net/xrea1x0e/
