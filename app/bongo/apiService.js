@@ -6,7 +6,6 @@ module.exports = apiServiceModule.name;
 // without hunting through all of our JS files.
 apiServiceModule.constant('BONGO_API_KEY', 'MTFUcpZstkSBFKg4QlsKNk9z4oBEodyM');
 
-console.log("Registereding bongoService");
 apiServiceModule.factory('bongoService', ['BONGO_API_KEY', '$http', function (BONGO_API_KEY, $http) {
 
     // Angular will run "factory" code once, and remember the return value. Later, any code which requests
@@ -47,7 +46,6 @@ apiServiceModule.factory('bongoService', ['BONGO_API_KEY', '$http', function (BO
             return makeCall('route', {agency: agency, route: route}) },
 
         stopInfo: function(stopId) {
-            console.log("\n\n\nreal one\n\n\n")
             return makeCall('stop', {stopid: stopId})
                 .then(function(response) { return response.data.stopinfo; })
         },
